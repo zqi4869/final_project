@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            background-image: url(images/bg.png);
+            justify-content: center;
+            padding: 30px 0;
+            margin-top: 100px;
+        }
+
+        .desc {
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        hr {
+            height: 10px;
+            background: rgb(243, 143, 156);
+        }
+
+        .desc img {
+            width: 180px;
+            border-radius: 20px;
+        }
+
+        @media screen and (max-width: 435px) {
+            .container {
+                flex-direction: column;
+                margin: 0;
+            }
+
+            h1 {
+                margin: 10px 0;
+                font-size: 45px;
+                text-align: center;
+            }
+
+            .desc {
+                margin: 0;
+            }
+
+            .desc img {
+                margin: 4px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="home.html" class="active">Home</a>
+        <a href="team_member.html">Team Member</a>
+        <a href="adopt_kitten.html">Adopt Kitten</a>
+        <a href="back_to_meow_planet.html">Back to Meow Planet</a>
+        <a href="about_us.html">About Us</a>
+    </header>
+
+    <section class="container">
+        <img src="images/home-logo.png">
+        <div class="desc">
+            <h1>Adopt a kitten</h1>
+            <hr />
+            <div>This site focuses on rescuing cats, helping cats, and making life better for critters!</div>
+            <div>
+                <img src="images/adpot/1.jpg">
+                <img src="images/adpot/2.jpg">
+                <img src="images/adpot/3.jpg">
+                <img src="images/adpot/4.jpg">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

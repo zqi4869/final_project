@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Kitten</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .container1 {
+            padding: 30px 0;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #e9e8e8;
+        }
+
+        .container1 img {
+            width: 290px;
+            height: 380px;
+        }
+
+        .container2 {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            column-gap: 5px;
+            row-gap: 5px;
+        }
+
+        .container2 img {
+            height: 150px;
+        }
+
+        .container2 .title {
+            text-align: center;
+        }
+
+        table {
+            border: solid 1px;
+            margin: 0 auto;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        button {
+            background: linear-gradient(to bottom, #7678ED 5%, #3D348B 100%);
+            border-radius: 6px;
+            border: 1px solid #7678ED;
+            cursor: pointer;
+            color: #ffffff;
+            padding: 6px 24px;
+        }
+
+        form .title {
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            background-color: rgb(228, 225, 225);
+        }
+
+        form td {
+            padding: 2px;
+            height: 49px;
+            border: solid 1px gray;
+        }
+
+        input {
+            height: 30px;
+        }
+
+        .container3 {
+            margin-top: 20px;
+            display: flex;
+        }
+
+
+        .container3 .right {
+            width: 50%;
+        }
+
+        .container3 .left {
+            width: 50%;
+        }
+
+        .gifts {
+            display: grid;
+            grid-template-columns: 150px 150px 150px 150px;
+            column-gap: 5px;
+            row-gap: 5px;
+            padding-left: 50px;
+            border-left: solid 8px rgb(36, 138, 123);
+        }
+
+        .gifts img {
+            width: 150px;
+        }
+
+        .gifts img:hover {
+            transform: scale(1.5);
+        }
+
+        @media screen and (max-width: 435px) {
+            .container2 {
+                grid-template-columns: auto auto;
+            }
+
+            .container2 img {
+                width: 50vw;
+            }
+
+            .container1 {
+                padding: 0;
+            }
+
+            .container1 img {
+                width: 100%;
+            }
+
+            .container3 {
+                flex-direction: column-reverse;
+            }
+
+            .container3 .right,
+            .container3 .left {
+                width: 100%;
+            }
+
+            .gifts {
+                border: none;
+                padding: 0;
+                grid-template-columns: 25% 25% 25% 25%;
+            }
+
+            .gifts img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="home.html">Home</a>
+        <a href="team_member.html">Team Member</a>
+        <a href="adopt_kitten.html" class="active">Adopt kitten</a>
+        <a href="back_to_meow_planet.html">Back to Meow Planet</a>
+        <a href="about_us.html">About Us</a>
+    </header>
+
+    <h1>Kittens that have been adopted</h1>
+    <section class="container2">
+        <div>
+            <div class="title">Curious Alley Explorer</div>
+            <img src="images/adpot/1.jpg">
+        </div>
+        <div>
+            <div class="title">Marketplace Miracle</div>
+            <img src="images/adpot/2.jpg">
+        </div>
+        <div>
+            <div class="title">Sewer Survivor</div>
+            <img src="images/adpot/3.jpg">
+        </div>
+        <div>
+            <div class="title">Resilient Rooftop Rescued</div>
+            <img src="images/adpot/4.jpg">
+        </div>
+        <div>
+            <div class="title">Dumpster Darling</div>
+            <img src="images/adpot/5.jpg">
+        </div>
+        <div>
+            <div class="title">Street-side Survivor</div>
+            <img src="images/adpot/6.jpg">
+        </div>
+        <div>
+            <div class="title">Storm Drain Savior</div>
+            <img src="images/adpot/7.jpg">
+        </div>
+        <div>
+            <div class="title">Underground Wonder</div>
+            <img src="images/adpot/8.jpg">
+        </div>
+        <div>
+            <div class="title">Courtyard Charmer</div>
+            <img src="images/adpot/9.jpg">
+        </div>
+        <div>
+            <div class="title">Furry Market Find</div>
+            <img src="images/adpot/10.jpg">
+        </div>
+    </section>
+
+
+    <h1>Kittens available for adoption</h1>
+    <section class="container1">
+        <div class="card">
+            <img src="images/not_adopt/1.jpg">
+            <div class="story">
+                Rescued from the bustling streets of Shanghai, this tiny feline faced an uncertain fate near a crowded
+                market. Our team intervened, offering a lifeline to this kitten, bringing it to safety and providing the
+                care it desperately needed. Once vulnerable to the hazards of city life, this little one now thrives in
+                a secure and loving environment, a testament to the impact of our rescue efforts.
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/not_adopt/2.jpg">
+            <div class="story">
+                Discovered near a sewer, this kitten's story began in the shadows of urban challenges. Rescued from
+                potential dangers, it now revels in the warmth and security of a caring shelter. From the complexities
+                of city living to the tranquility of a safe haven, this rescued feline embodies the transformative power
+                of compassion.
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/not_adopt/3.jpg">
+            <div class="story">
+                Found in distress near a busy waterway, this kitten's fate took a positive turn with our intervention.
+                Liberated from the uncertainties of life on the streets, it now experiences the comfort and care it
+                deserves. This rescue story symbolizes the hope we bring to vulnerable creatures, offering them a chance
+                for a better life.
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/not_adopt/4.jpg">
+            <div class="story">
+                Safeguarded from the perils of urban life, this rescued kitten emerged from the shadows of an alley to
+                find refuge in our care. The challenges of city living are replaced with the security of a loving
+                environment, where this little one can grow and thrive. Our rescue efforts transform lives, ensuring
+                that each feline friend gets the second chance they deserve.
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/not_adopt/5.jpg">
+            <div class="story">
+                Rescued from a maze of sewer complexities, this kitten's journey reflects the resilience of these
+                vulnerable beings. Saved from potential harm, it now enjoys the safety and warmth of a compassionate
+                home. The story of this rescued feline is a testament to our commitment to making a difference in the
+                lives of those who cannot speak for themselves.
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/not_adopt/6.jpg">
+            <div class="story">
+                Pulled from the uncertainties of a bustling residential neighborhood, this little one found solace and
+                well-being in our rescue mission. The challenges of city life are replaced with the security of a loving
+                home, where this rescued kitten can flourish. Each rescue story is a triumph, turning adversity into a
+                tale of hope and transformation.
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/not_adopt/7.jpg">
+            <div class="story">
+                From the chaos of a crowded market to the safety of our shelter, this rescued kitten's journey
+                represents a shift from vulnerability to security. Our intervention ensures that it can now relish the
+                tranquility of a loving environment, free from the dangers of Shanghai's busy streets. This feline
+                friend embodies the impact of compassion and care.
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/not_adopt/8.jpg">
+            <div class="story">
+                Rescued from the perils of city living near a busy street, this kitten's story unfolds as it thrives in
+                a safe and nurturing environment. The challenges it faced in a bustling residential area are replaced
+                with the warmth and comfort of a loving home. Our rescue efforts create a haven for these vulnerable
+                creatures, offering them a chance for a brighter future.
+            </div>
+        </div>
+    </section>
+
+    <section class="container3">
+        <div class="left">
+            <h1>Adoption requirements</h1>
+            <form>
+                <table cell>
+                    <tr>
+                        <td colspan="2" class="title">Personal Information</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Full Name:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Age:</td>
+                        <td><input type="number" value="18"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Phone:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Address:</td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="title">Living Situation</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Do you own or rent your home?</td>
+                        <td>
+                            <input type="radio" name="radio1">Yes
+                            <input type="radio" name="radio1">No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">If renting, is your lease pet-friendly?</td>
+                        <td>
+                            <input type="radio" name="radio1">Yes
+                            <input type="radio" name="radio1">No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Do you have a yard or outdoor space?</td>
+                        <td>
+                            <input type="radio" name="radio1">Yes
+                            <input type="radio" name="radio1">No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Are there other pets in the household?:</td>
+                        <td>
+                            <input type="radio" name="radio1">Yes
+                            <input type="radio" name="radio1">No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <button>Submit</button>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <div>
+
+                </div>
+
+
+            </form>
+        </div>
+
+        <div class="right">
+            <h1>Adoption gift</h1>
+            <div class="gifts">
+                <img src="images/gift/1.jpg">
+                <img src="images/gift/2.jpg">
+                <img src="images/gift/3.jpg">
+                <img src="images/gift/4.jpg">
+                <img src="images/gift/5.jpg">
+                <img src="images/gift/6.jpg">
+                <img src="images/gift/7.jpg">
+                <img src="images/gift/8.jpg">
+                <img src="images/gift/9.jpg">
+                <img src="images/gift/10.jpg">
+                <img src="images/gift/11.jpg">
+                <img src="images/gift/12.jpg">
+                <img src="images/gift/13.jpg">
+                <img src="images/gift/14.jpg">
+                <img src="images/gift/15.jpg">
+                <img src="images/gift/16.jpg">
+            </div>
+        </div>
+    </section>
+</body>
+
+
+
+
+</html>

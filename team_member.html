@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Member</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p {
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: 300px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .row div {
+            width: 400px;
+            margin: 10px 50px;
+        }
+
+        .text {
+            font-size: 22px;
+        }
+
+        @media screen and (max-width: 435px) {
+            .row {
+                flex-wrap: wrap;
+            }
+
+            .row div {
+                margin: 10px;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .reverse {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="home.html">Home</a>
+        <a href="team_member.html" class="active">Team Member</a>
+        <a href="adopt_kitten.html">Adopt kitten</a>
+        <a href="back_to_meow_planet.html">Back to Meow Planet</a>
+        <a href="about_us.html">About Us</a>
+    </header>
+
+    <div class="row">
+        <div class="text">
+            <h1>Ariel</h1>
+            The founder of the team, Ariel has been involved in stray cat rescue in Shanghai since 2008. With
+            extensive experience in rescuing and fostering stray cats, she personally rescued and rehomed around 200
+            kittens before forming the team.
+        </div>
+        <div>
+            <img src="images/team_member/ariel.jpg">
+        </div>
+    </div>
+    <div class="row reverse">
+        <div>
+            <img src="images/team_member/eve.jpg">
+        </div>
+        <div class="text">
+            <h1>Eve</h1>
+            A graduate in veterinary medicine, Eve initially joined a campus-based stray cat rescue group before
+            becoming part of our team. She provides guidance on the socialization and medication of cats, bringing
+            professional expertise to our efforts.
+        </div>
+    </div>
+    <div class="row">
+        <div class="text">
+            <h1>Joyce</h1>
+            Starting her rescue journey in 2019, Joyce rescued her first stray cat. After meeting Ariel, they joined
+            forces to establish the cat rescue team. Joyce brings rich experience in capturing cats, whether for medical
+            treatment or TNR, always adhering to legal and ethical standards.
+        </div>
+        <div>
+            <img src="images/team_member/joyce.jpg">
+        </div>
+    </div>
+    <div class="row reverse">
+        <div>
+            <img src="images/team_member/zhen.jpg">
+        </div>
+        <div class="text">
+            <h1>Zhen</h1>
+            Apart from regular responsibilities, Zhen excels in video and photo production, as well as managing social
+            media accounts. During her tenure overseeing the team's accounts, the total followers across various
+            platforms exceeded 100,000.
+        </div>
+    </div>
+
+</body>
+
+</html>
